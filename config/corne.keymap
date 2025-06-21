@@ -53,10 +53,10 @@
             //                            | GUI |     |  SPC  |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL        &kp AT          &kp HASH         &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans    &sys_reset     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &mkp RCLK       &mmv MOVE_DOWN  &mkp LCLK        &trans    &bootloader    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                           &kp LGUI         &trans    &kp SPACE      &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL        &kp AT          &kp HASH         &kp DLLR        &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans          &sys_reset     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &studio_unlock  &bootloader    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                           &kp LGUI         &trans          &kp SPACE      &kp RET    &trans     &kp RALT
             >;
         };
 
