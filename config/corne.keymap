@@ -12,7 +12,7 @@
 &led_strip { chain-length = <27>; };
 
 &mmv {
-    time-to-max-speed-ms = <600>;
+    time-to-max-speed-ms = <150>;
     acceleration-exponent = <2>;
 };
 
