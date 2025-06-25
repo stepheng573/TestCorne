@@ -38,10 +38,10 @@
             //                      | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB         &kp LG(Q)  &kp LG(W)  &kp LG(T)       &trans     &kp K_MUTE           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS         &kp EQUAL  &kp BSPC
-&kp LCTRL       &kp LG(C)  &kp LG(V)  &kp UP_ARROW    &trans     &kp C_VOLUME_UP      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET  &kp RBKT   &kp RG(RS(L))
-&kp LEFT_SHIFT  &trans     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp C_VOLUME_DOWN    &kp N7        &kp N8        &kp N9        &kp SQT           &trans     &trans
-                                      &kp LGUI        &trans     &kp SPACE            &kp RET       &kp SPACE     &kp NUMBER_0
+&kp TAB         &kp LG(Q)  &kp LG(W)  &kp LG(T)       &kp UP_ARROW     &kp PAGE_UP      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS         &kp EQUAL  &kp BSPC
+&kp LCTRL       &kp LG(C)  &kp LG(V)  &kp LEFT        &kp DOWN         &kp RIGHT        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET  &kp RBKT   &kp RG(RS(L))
+&kp LEFT_SHIFT  &trans     &kp LEFT   &kp DOWN_ARROW  &kp C_VOLUME_UP  &kp PAGE_DOWN    &kp N7        &kp N8        &kp N9        &kp SQT           &trans     &trans
+                                      &kp LGUI        &trans           &kp SPACE        &kp RET       &kp SPACE     &kp NUMBER_0
             >;
         };
 
@@ -53,19 +53,19 @@
             //                            | GUI |     |  SPC  |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp LC(LG(Q))   &trans          &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH               &kp UNDERSCORE     &kp PLUS         &kp BSPC
-&kp LCTRL  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans            &sys_reset     &kp DOLLAR       &kp PERCENT   &kp CARET              &kp LEFT_BRACE     &kp RIGHT_BRACE  &bt BT_CLR
-&kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &studio_unlock    &bootloader    &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS   &kp DOUBLE_QUOTES  &trans           &bt BT_NXT
-                                           &kp LGUI         &trans            &kp SPACE      &kp RET          &kp SPACE     &kp RIGHT_PARENTHESIS
+&kp TAB    &kp LC(LG(Q))  &to 3           &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT           &kp EXCLAMATION  &kp AT_SIGN   &kp HASH               &kp UNDERSCORE     &kp PLUS         &kp BSPC
+&kp LCTRL  &sys_reset     &trans          &trans          &trans            &kp C_VOLUME_UP      &kp DOLLAR       &kp PERCENT   &kp CARET              &kp LEFT_BRACE     &kp RIGHT_BRACE  &bt BT_CLR
+&kp LSHFT  &bootloader    &studio_unlock  &trans          &kp K_MUTE        &kp C_VOLUME_DOWN    &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS   &kp DOUBLE_QUOTES  &trans           &bt BT_NXT
+                                          &kp LGUI        &trans            &kp SPACE            &kp RET          &kp SPACE     &kp RIGHT_PARENTHESIS
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &to 0   &trans  &trans  &trans    &msc SCRL_UP    &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_DOWN  &trans           &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
     };
