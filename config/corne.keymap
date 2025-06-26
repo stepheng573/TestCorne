@@ -22,6 +22,15 @@
 &mt { tapping-term-ms = <250>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESC>;
+            key-positions = <1 0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
