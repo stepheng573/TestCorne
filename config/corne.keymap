@@ -55,10 +55,10 @@
             //                      | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB         &kp LG(Q)          &kp LG(W)  &kp UP    &kp LG(T)  &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS         &kp EQUAL  &kp BSPC
-&kp LCTRL       &none              &kp LEFT   &kp DOWN  &kp RIGHT  &kp LG(V)      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET  &kp RBKT   &kp RG(RS(L))
-&kp LEFT_SHIFT  &kp LS(LC(GLOBE))  &none      &none     &none      &kp LG(C)      &kp N7        &kp N8        &kp N9        &kp SQT           &trans     &trans
-                                              &kp LGUI  &trans     &kp SPACE      &kp RET       &kp SPACE     &kp NUMBER_0
+&kp TAB         &kp LG(Q)          &kp LG(W)  &kp UP    &kp LG(T)  &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS      &kp EQUAL  &kp BSPC
+&kp LCTRL       &none              &kp LEFT   &kp DOWN  &kp RIGHT  &kp LG(V)      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON  &kp SQT    &kp RG(RS(L))
+&kp LEFT_SHIFT  &kp LS(LC(GLOBE))  &none      &none     &none      &kp LG(C)      &kp N7        &kp N8        &kp N9        &kp SQT        &kp SLASH  &trans
+                                              &kp LGUI  &trans     &kp SPACE      &kp RET       &kp NUMBER_0  &kp PERIOD
             >;
         };
 
@@ -70,10 +70,10 @@
             //                            | GUI |     |  SPC  |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp LC(LG(Q))  &none           &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH               &kp UNDERSCORE     &kp PLUS         &kp BSPC
-&kp LCTRL  &sys_reset     &trans          &trans          &trans            &kp C_VOL_DN       &kp DOLLAR       &kp PERCENT   &kp CARET              &kp LEFT_BRACE     &kp RIGHT_BRACE  &none
-&kp LSHFT  &bootloader    &studio_unlock  &trans          &none             &kp K_MUTE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS   &kp DOUBLE_QUOTES  &trans           &bt BT_NXT
-                                          &kp LGUI        &trans            &kp SPACE          &kp RET          &kp SPACE     &kp RIGHT_PARENTHESIS
+&kp LG(LC(Q))  &kp TILDE    &none           &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE         &kp PLUS           &kp BSPC
+&kp LCTRL      &sys_reset   &trans          &trans          &trans            &kp C_VOL_DN       &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON              &kp DOUBLE_QUOTES  &kp PIPE
+&kp LSHFT      &bootloader  &studio_unlock  &trans          &none             &kp K_MUTE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION       &bt BT_NXT
+                                            &kp LGUI        &trans            &kp SPACE          &kp RET          &kp SPACE     &trans
             >;
         };
     };
