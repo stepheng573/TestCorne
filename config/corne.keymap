@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -71,9 +72,18 @@
 
             bindings = <
 &kp LG(LC(Q))  &kp TILDE    &none           &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE         &kp PLUS           &kp BSPC
-&kp LCTRL      &sys_reset   &trans          &trans          &trans            &kp C_VOL_DN       &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON              &kp DOUBLE_QUOTES  &kp PIPE
+&kp LCTRL      &sys_reset   &tog 3          &trans          &trans            &kp C_VOL_DN       &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON              &kp DOUBLE_QUOTES  &kp PIPE
 &kp LSHFT      &bootloader  &studio_unlock  &trans          &none             &kp K_MUTE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION       &bt BT_NXT
                                             &kp LGUI        &trans            &kp SPACE          &kp RET          &kp SPACE     &trans
+            >;
+        };
+
+        Backlight {
+            bindings = <
+&trans  &trans  &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &bl BL_TOG  &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &bl BL_DEC  &bl BL_INC  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans      &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
